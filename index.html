@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Pokedex</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="shortcut icon" type="img/pokeball-logo.png" href="img/pokeball-logo.png"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js" type="text/javascript" defer></script>
+
+    <script src="js/app.js" type="text/javascript" defer></script>
+    <script src="js/redux.js" type="text/javascript" defer></script>  
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="contenedor">
+        <form action="#pokedex">
+            <button type="submit" class="botonF1" ></button>
+        </form>       
+
+        </div>
+
+        <header id="header">
+            <div class="row">
+                <h1>Bienvenidos</h1>
+            </div> 
+        </header>
+
+        <nav class="navbar one-page-nav">
+            <nav class="wrapper">
+                <div class="logo">PoKeDeX<img src="img/pokeball-logo.png" alt=""></div><!-- Logo -->
+            <input type="checkbox" id="menu-toggle">
+              <label for="menu-toggle" class="label-toggle"></label>
+            </input>
+            <ul id="navigation" class="nav">            
+              <a href="#inicio" data-scroll="inicio"><li>Inicio</li></a>
+              <a href="#pokedex" data-scroll="pokedex"><li>Pokedex</li></a>
+              <a href="#contacto" data-scroll="contacto"><li>Contacto</li></a>
+            </ul>
+            </nav>
+        </nav>
+        <section id="inicio" data-anchor="inicio" class="padd">
+            <div class="row"><h1 class="text-center">Inicio</h1></div>
+            <div class="row"><p class="lead text-center text-red">Implementación de API Pokémon para prueba de conocimientos.</p></div>
+            <div id="pikachu"></div>
+
+    </div>
+    </section>
+    <section id="pokedex" data-anchor="pokedex" class="padd">
+        <div class="row"><h1 class="text-center">Pokedex</h1></div>
+        <div class="row"><p class="lead text-center text-red">Búsqueda Pokémon por medio de la API <a href="https://pokeapi.co/"> Pokeapi</a>.</p></div>
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" name="pokemon" autocomplete="off">
+        </form>
+        <div data-poke-tarjeta class="poke-tarjeta">
+            <div data-poke-nombre>Pokedex</div>
+            <div data-poke-imagen-container class="img-container">
+                <img data-poke-imagen class="poke-img" src="img/poke-shadow.png"/>
+            </div>
+            <div data-poke-id></div>
+            <div data-poke-tipos class="poke-tipos"></div>
+            <div data-poke-estadisticas class="poke-estadisticas"></div>
+            </div>
+        </div>        
+
+    </section>
+
+
+
+    <section id="contacto" data-anchor="contacto" class="padd">
+        <div class="row"><h1 class="text-center">Contacto</h1></div>
+        <div class="row"><p class="lead text-center text-red"></p></div>
+            <div class="row"><p>Teléfono:<a href="https://api.whatsapp.com/send?phone=525617075485" target="_blank">5617075485</a></p></div>
+            <div class="row"><p>Correo: <a href="mailto:rogelio-daniel@hotmail.es">rogelio-daniel@hotmail.es</a></p><div>
+            <img class="logo2" src="img/ditto.png" alt=""><!-- Logo -->
+            <!--div class="row"><p><a href="https://github.com/RogelioDaniel">Github</a></p><div>
+            <div class="row"><p><a href="www.linkedin.com/in/rogelio-daniel-roldan-guzman-54b81520b">Linkendin</a></p><div-->
+    </section>
+      
+    <footer id="divider"><p>Copyright &copy; 2021 <a href="http://www.rogelio.tech">rogelio.tech</a></p></footer>
+</body>
+</html>
